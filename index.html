@@ -9,24 +9,32 @@
 </head>
 <body>
     <main id="main">
-   <h1 id="title">Thomas Sankra</h1> 
-   <figure id="img-div">
-   <img id='image' src="./images/thomas-sankara-1.jpeg" alt="picture of thomas sankara from a news conference"/>
-    <figcaption id="img-caption" >picture of thomas sankara from a news conference</figcaption>
-</figure>
-<p id="tribute-info" >Thomas Isidore Noël Sankara was a Burkinabé military officer, Marxist revolutionary, and pan-Africanist President of Burkina Faso from his coup in 1983 to his deposition and murder in 1987.</p>
+    
+    <header>
+        <h1 id="title">Thomas Sankra</h1>
+        <h2 id="title2">An African Revolutionary</h2>
+    </header>
+   
+   
    <figure>
-   <img src="./images/thomas-sankara-3.png" alt="picture of thomas sankara sitting in army uniform"/>
+   <img class="pic1" src="./images/thomas-sankara-1.jpeg" alt="Picture of thomas sankara from a news conference">
+    <figcaption id="img-caption" class="pic1">Sankara opposed foreign aid, saying that “he who feeds you, controls you.”</figcaption> 
+
+</figure id="img-div">
+<p id="tribute-info">Thomas Isidore Noël Sankara was a Burkinabé military officer, Marxist revolutionary, and pan-Africanist President of Burkina Faso from his coup in 1983 to his deposition and murder in 1987.</p>
+   <figure>
+   <img id='pic2' src="./images/thomas-sankara-3.png" alt="picture of thomas sankara sitting in army uniform"/>
    <figcaption>picture of thomas sankara sitting in army uniform</figcaption>
 </figure>
-   <figure>
+
+<figure>
 <img src="./images/thomas-sankara-2.png" alt="picture of thomas sankara in miliary uniform with map of africa behind" width='300' height='300'/>
 <figcaption>picture of thomas sankara in miliary uniform with map of africa behind</figcaption>
 </figure>
-   <a id="tribute-link" target="_blank" href="https://www.youtube.com/watch?v=G7Vlt41HPUE&ab_channel=Afrikanews" > click here</a>
 
+<div class="info">
 <h3>Interesting Facts About Thomas Sankara</h3>
-<ul>
+ <ul>
     <li>Former Burkina Faso President <em>Thomas Isidore Noël Sankara</em>, one of Africa’s most celebrated leaders, was killed in a military coup on 15 October 1987.</li>
     <li>The popular leader commonly referred to as “Africa’s Che Guevara” is credited with laying the foundation for Burkina Faso’s ambitious drive for democratic, social and economic change.</li>
     <li>Sankara ruled for only four years, but left a lasting legacy, one that is celebrated not only in Africa but the world at large.</li>
@@ -34,7 +42,19 @@
     <li>Sankara’s main vision for the landlocked West African country was simple; eliminate corruption and end the French dominance.</li>
     <li>To begin the country’s new era, he renamed the country from the French colonial Upper Volta to Burkina Faso, meaning “Land of Upright Man.”</li>
     <li>The pan Africanist’s political agenda was clear to see, but so was his vision in other sectors including health, environmental conservation, education, women empowerment and much more.</li>
-</ul>
+ </ul>
+</div>
+
+<a id="tribute-link" target="_blank" href="https://www.youtube.com/watch?v=G7Vlt41HPUE&ab_channel=Afrikanews" > click here to watch the Thomas Sankara documentary The Upright Man</a>
+
+<footer>
+    <p>Today's date is <span id="date"></span></p>
+</footer>
+
 </main>
+    <script>
+        const d = new Date().toLocaleDateString();
+        document.getElementById("date").innerHTML = d;
+    </script>
 </body>
 </html>
